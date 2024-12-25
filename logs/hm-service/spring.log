@@ -1,0 +1,30 @@
+21:12:11:984  INFO 12788 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.16.1 on 神奇海螺 with PID 12788 (C:\Users\12154\Desktop\hmall\hm-service\target\classes started by 12154 in C:\Users\12154\Desktop\hmall)
+21:12:11:994 DEBUG 12788 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:12:11:994  INFO 12788 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "local"
+21:12:13:033  INFO 12788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:12:13:037  INFO 12788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:12:13:078  INFO 12788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+21:12:13:663  INFO 12788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+21:12:13:673  INFO 12788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:12:13:673  INFO 12788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:12:13:845  INFO 12788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:12:13:845  INFO 12788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1796 ms
+21:12:16:896  INFO 12788 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+21:12:17:342  INFO 12788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+21:12:17:343  INFO 12788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+21:12:17:345  INFO 12788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+21:12:17:372  INFO 12788 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+21:12:17:536  INFO 12788 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 6.037 seconds (JVM running for 8.032)
+21:12:47:670  INFO 12788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:12:47:670  INFO 12788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+21:12:47:672  INFO 12788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+21:12:47:833  INFO 12788 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+21:12:48:117  INFO 12788 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+21:12:48:122 DEBUG 12788 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+21:12:48:141 DEBUG 12788 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : ==> Parameters: Jack(String)
+21:12:48:176 DEBUG 12788 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : <==      Total: 1
+21:12:48:487 DEBUG 12788 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.selectList   : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+21:12:48:488 DEBUG 12788 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.selectList   : ==> Parameters: 1(Long)
+21:12:48:494 DEBUG 12788 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.selectList   : <==      Total: 0
+21:53:34:630  INFO 12788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+21:53:34:645  INFO 12788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
